@@ -55,7 +55,7 @@ export default function Editor(props) {
             matchBrackets: true,
             extraKeys: { "Ctrl-Space": "autocomplete" },
             mode: language,
-            theme: "monokai",
+            theme: "material",
             keyMap: "sublime",
           }}
         />

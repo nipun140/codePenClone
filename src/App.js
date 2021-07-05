@@ -102,19 +102,19 @@ function App() {
         <div className="pane top-pane">
           <div className="buttons">
             <button
-              style={{ color: htmlDisplay ? "red" : "black" }}
+              style={{ color: htmlDisplay ? "yellow" : "white" }}
               onClick={toggleHtml}
             >
               HTML
             </button>
             <button
-              style={{ color: cssDisplay ? "red" : "black" }}
+              style={{ color: cssDisplay ? "yellow" : "white" }}
               onClick={toggleCss}
             >
               CSS
             </button>
             <button
-              style={{ color: jsDisplay ? "red" : "black" }}
+              style={{ color: jsDisplay ? "yellow" : "white" }}
               onClick={toggleJs}
             >
               JS
