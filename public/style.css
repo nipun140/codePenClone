@@ -35,6 +35,10 @@ html {
   flex-direction: column;
   padding: 1rem;
   transition: all 0.3s;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: normal;
+  overflow-y: auto !important;
 }
 
 .editor-title {
@@ -80,6 +84,32 @@ html {
   overflow-y: auto !important;
 }
 
+/* .editor-container {
+  width: 100%;
+  height: 33%;
+} */
+
+/* .editor-container.expanded {
+  width: 100%;
+  height: 40%;
+} */
+
+.buttons {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+}
+
+.buttons button {
+  width: 100%;
+  display: block;
+  padding: 0.5rem;
+}
+
+.activeBtn {
+  color: red;
+}
+
 @media (max-width: 800px) {
   html {
     font-size: 9px;
@@ -92,8 +122,8 @@ html {
   }
 
   .pane {
-    height: 100%;
-    width: 50%;
+    height: 100vh;
+    width: 50vw;
   }
 
   .top-pane {
@@ -102,15 +132,18 @@ html {
     justify-content: space-between;
   }
 
-  .editor-container {
-    width: 100%;
-    height: 33%;
+  .buttons {
+    display: flex;
   }
 
-  .editor-container.expanded {
+  .editor-container {
     width: 100%;
-    height: 40%;
-    /* flex-grow: 0; */
+    height: 100%;
+    /* display: none; */
+  }
+
+  .editor-title {
+    display: none;
   }
 }
 
